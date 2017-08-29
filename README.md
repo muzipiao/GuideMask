@@ -1,6 +1,6 @@
 # GuideMask
 
-[![CocoaPods compatible](https://img.shields.io/cocoapods/v/GuideMask.svg?style=flat)](https://cocoapods.org/pods/MBProgressHUD) 
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/GuideMask.svg?style=flat)](https://cocoapods.org/pods/GuideMask) 
 [![License: MIT](https://img.shields.io/cocoapods/l/GuideMask.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 `GuideMask ` 可快速添加新功能提示，只需传入相应的View和新功能小图片名称即可。

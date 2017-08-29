@@ -36,6 +36,7 @@
 
 static GuideMask *instance;
 
+#pragma mark - 定义为单例
 + (instancetype)shareGuide
 {
     static dispatch_once_t onceToken;
@@ -84,12 +85,16 @@ static GuideMask *instance;
     CGRect rect = [tempView convertRect:tempView.bounds toView:[UIApplication sharedApplication].delegate.window];
     
     //获取遮罩图形
-    UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:GuideMaskMargin];
+    UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:5];
     //获取提示图片
     NSString *imgName = [NSString stringWithFormat:@"%@%d",self.tipImagePrefixName,(int)self.currentIndex];
     UIImage *tipImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgName ofType:@"png"]];
     if (tipImg == nil) {
         tipImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgName ofType:@"PNG"]];
+        //如果文件目录读取不到，则读取assets
+        if (tipImg == nil) {
+            tipImg = [UIImage imageNamed:imgName];
+        }
     }
     
     //设置遮罩图形
@@ -144,7 +149,7 @@ static GuideMask *instance;
 
 /**
  改变提示图片的位置
-
+ 
  @param tipRect 提示图片位置
  @param guideRect 被提示的位置
  */
@@ -192,6 +197,11 @@ static GuideMask *instance;
             break;
         case GuideMaskPositionRightDown:{
             tipRect.origin.x = guideRect.origin.x + guideRect.size.width * 0.5;
+            self.tipImageView.frame = [self checkOverEdge:tipRect];
+        }
+            break;
+        case GuideMaskPositionCenter:{
+            tipRect.origin.y = guideRect.origin.y + (guideRect.size.height - tipRect.size.height) * 0.5;
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }
             break;
@@ -267,7 +277,7 @@ static GuideMask *instance;
         //坐标转换,以提示控件的坐标原点为原点，且和提示控件一样大小（bounds）的图案在window中的位置
         CGRect rect = [tempView convertRect:tempView.bounds toView:[UIApplication sharedApplication].delegate.window];
         //获取遮罩图形
-        UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:GuideMaskMargin];
+        UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:5];
         self.bgImageView.image = maskImg;
     }
 }

@@ -24,14 +24,15 @@ typedef NS_ENUM(NSInteger, GuideMaskPosition) {
     /// 右上
     GuideMaskPositionRightUp,
     /// 右下
-    GuideMaskPositionRightDown
+    GuideMaskPositionRightDown,
+    /// 中心对齐
+    GuideMaskPositionCenter
 };
 
 @interface GuideMask : NSObject
 
 //定义为单例
 +(instancetype)shareGuide;
-
 
 /**
  创建遮罩提示层
@@ -45,7 +46,7 @@ typedef NS_ENUM(NSInteger, GuideMaskPosition) {
 //背景色，默认为黑色，几乎透明(Alpha=0.1)的背景色
 @property (nonatomic, strong) UIColor *bgColor;
 
-//提示图片的位置
+//提示图片的位置数组，放入枚举例如@[@(GuideMaskPositionUp),@(GuideMaskPositionDown)]
 @property (nonatomic, strong) NSArray *tipImageLocation;
 
 @end

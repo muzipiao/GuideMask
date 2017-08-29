@@ -35,18 +35,24 @@
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
         [btn setTitle:@"133218908908111" forState:UIControlStateNormal];
         [self.view addSubview:btn];
-        btn.frame = CGRectMake(120, 80 + i * 60, 100, 60);
+        btn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width * 0.5 - 50, 100 + i * 50, 100, 60);
         [btn sizeToFit];
         [marr addObject:btn];
     }
     
-    if (self.isNewVersion) {
+    //判断是否是新版本
+    if (YES) {
+        //创建提示
         GuideMask *tipView = [GuideMask shareGuide];
-        [tipView addGuideViews:marr.copy imagePrefixName:@"tipImage"];
+        //待提示的数组放入数组中，并把图片名称前缀传入
+        [tipView addGuideViews:marr.copy imagePrefixName:@"arrow"];
         
-        tipView.tipImageLocation = @[@(GuideMaskPositionUp),@(GuideMaskPositionDown),@(GuideMaskPositionLeft),@(GuideMaskPositionRight),@(GuideMaskPositionLeftDown),@(GuideMaskPositionLeftUp),@(GuideMaskPositionRightUp),@(GuideMaskPositionRightDown)];
-        
+        //-------------------------下方可选----------------
+        //指定位置，默认在正下方
+        tipView.tipImageLocation = @[@(GuideMaskPositionUp),@(GuideMaskPositionDown),@(GuideMaskPositionLeft),@(GuideMaskPositionRight),@(GuideMaskPositionLeftUp),@(GuideMaskPositionRightUp),@(GuideMaskPositionLeftDown),@(GuideMaskPositionRightDown)];
+        //背景色
         tipView.bgColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
+        
     }
     
 }

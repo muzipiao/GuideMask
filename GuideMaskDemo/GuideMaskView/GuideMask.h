@@ -26,7 +26,9 @@ typedef NS_ENUM(NSInteger, GuideMaskPosition) {
     /// 右下
     GuideMaskPositionRightDown,
     /// 中心对齐
-    GuideMaskPositionCenter
+    GuideMaskPositionCenter,
+    /// 全屏覆盖
+    GuideMaskPositionFullScreen
 };
 
 @interface GuideMask : NSObject

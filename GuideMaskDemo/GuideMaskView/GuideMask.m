@@ -205,6 +205,10 @@ static GuideMask *instance;
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }
             break;
+        case GuideMaskPositionFullScreen:{
+            self.tipImageView.frame = [UIScreen mainScreen].bounds;
+        }
+            break;
         default:{
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }

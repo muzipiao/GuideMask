@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GuideMask"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "快速添加新功能提示，只需传入相应待提示的View和新功能小图片名称即可"
   s.homepage     = "https://github.com/muzipiao/GuideMask"
   s.license      = "MIT"

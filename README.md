@@ -26,9 +26,9 @@
 * Foundation.framework
 * UIKit.framework
 
-这都是`废话`，一般开发都包含以上这两个类库
+开发默认包含以上这两个类库
 
-最好更新Xcode至最新版本，`GuideMask `编译环境为Xcode 8.3.2，低版本的Xcode可能出现未知错误。
+`GuideMask `Demo编译环境为Xcode 9.3
 
 ## 添加 GuideMask 至你的项目
 
@@ -65,6 +65,12 @@ GuideMask *mask = [GuideMask shareGuide];
 //-------------------------可选----------------
 //指定位置，默认在正下方
 mask.tipImageLocation = @[@(GuideMaskPositionUp),@(GuideMaskPositionDown),@(GuideMaskPositionLeft),@(GuideMaskPositionRight),@(GuideMaskPositionLeftUp),@(GuideMaskPositionRightUp),@(GuideMaskPositionLeftDown),@(GuideMaskPositionRightDown)];
+/**
+* 某个位置微调；@{@"位置0,1,2..":@"{水平偏移,竖直偏移}"}
+* 以数组元素索引为key，UIOffset(horizontal, vertical)为偏移量
+* eg:@{@"2":@"{10,-5}"}表示第3张提示图片水平方向向右偏移10，竖直防线向上偏移5
+*/
+mask.offsetDict = @{@"0":@"{0,-5}",@"1":@"{-40,0}", @"2":@"{0,20}", @"3":@"{0,8}"};
 //背景色
 mask.bgColor = [UIColor colorWithRed:128.0/255.0 green:128.0/255.0 blue:128.0/255.0 alpha:0.7];
 ```

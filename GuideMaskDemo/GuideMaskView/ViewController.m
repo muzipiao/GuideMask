@@ -50,6 +50,16 @@
         //-------------------------下方可选----------------
         //指定位置，默认在正下方
         tipView.tipImageLocation = @[@(GuideMaskPositionUp),@(GuideMaskPositionDown),@(GuideMaskPositionLeft),@(GuideMaskPositionRight),@(GuideMaskPositionLeftUp),@(GuideMaskPositionRightUp),@(GuideMaskPositionLeftDown),@(GuideMaskPositionRightDown)];
+        
+        /*
+         * 设置偏移量UIOffset(horizontal, vertical)
+         * 第0个向上偏移5
+         * 第1个向左偏移40
+         * 第2个向下偏移20
+         * 第3个向下偏移8
+         */
+        tipView.offsetDict = @{@"0":@"{0,-5}",@"1":@"{-40,0}", @"2":@"{0,20}", @"3":@"{0,8}"};
+        
         //背景色
         tipView.bgColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
         

@@ -8,7 +8,8 @@
 
 #import "GuideMask.h"
 
-#define GuideMaskMargin 5
+#define kGuideMaskMargin 5
+#define kDefaultRectRadius 5
 
 @interface GuideMask ()
 
@@ -28,7 +29,7 @@
 @property (nonatomic, assign) NSInteger currentIndex;
 
 //当前被指引的数组
-@property (nonatomic, strong) NSArray <UIView *>*beGuidedViewsArray;
+@property (nonatomic, strong) NSArray<UIView *> *beGuidedViewsArray;
 
 @end
 
@@ -63,7 +64,7 @@ static GuideMask *instance;
     return instance;
 }
 
--(void)addGuideViews:(NSArray *)beGuidedViews imagePrefixName:(NSString *)prefixName{
+-(void)addGuideViews:(NSArray<UIView *> *)beGuidedViews imagePrefixName:(NSString *)prefixName{
     if(beGuidedViews.count == 0)return;
     //添加到视图
     [[UIApplication sharedApplication].delegate.window addSubview:self.bgView];
@@ -85,10 +86,12 @@ static GuideMask *instance;
     CGRect rect = [tempView convertRect:tempView.bounds toView:[UIApplication sharedApplication].delegate.window];
     
     //获取遮罩图形
-    UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:5];
+    CGFloat rectRadius = self.rectRadius ? self.rectRadius : kDefaultRectRadius;
+    UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:rectRadius];
     //获取提示图片
     NSString *imgName = [NSString stringWithFormat:@"%@%d",self.tipImagePrefixName,(int)self.currentIndex];
-    UIImage *tipImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgName ofType:@"png"]];
+    NSData *tipImgData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgName ofType:@"png"]];
+    UIImage *tipImg = [UIImage imageWithData:tipImgData scale:[UIScreen mainScreen].scale];
     if (tipImg == nil) {
         tipImg = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:imgName ofType:@"PNG"]];
         //如果文件目录读取不到，则读取assets
@@ -96,7 +99,6 @@ static GuideMask *instance;
             tipImg = [UIImage imageNamed:imgName];
         }
     }
-    
     //设置遮罩图形
     self.bgImageView.image = maskImg;
     //设置提示图片
@@ -104,12 +106,11 @@ static GuideMask *instance;
     
     if (tipImg != nil) {
         //提示图片位置，可根据图片尺寸计算，与提示框居中对齐
-        CGFloat scale = [UIScreen mainScreen].scale;
-        CGFloat tipW = tipImg.size.width / scale;
-        CGFloat tipH = tipImg.size.height / scale;
+        CGFloat tipW = tipImg.size.width;
+        CGFloat tipH = tipImg.size.height;
         //中心对齐
         CGFloat tipX = rect.origin.x + (rect.size.width - tipW) * 0.5;
-        CGFloat tipY = rect.origin.y + rect.size.height + GuideMaskMargin;
+        CGFloat tipY = rect.origin.y + rect.size.height + kGuideMaskMargin;
         //如果设置了自定义位置，就按照设定的位置
         if (self.tipImageLocation.count > 0) {
             [self changeTipImageViewLocation:CGRectMake(tipX, tipY, tipW, tipH) guideRect:rect];
@@ -142,14 +143,23 @@ static GuideMask *instance;
     tipX = tipX + tipW > GuideScreenW ? GuideScreenW - tipW : tipX;
     tipY = tipY < 0 ? 0 : tipY;
     tipY = tipY + tipH > GuideScreenH ? GuideScreenH - tipH : tipY;
-    
+    //如果设置了偏移量，则根据偏移量微调
+    NSString *offsetKey = [NSString stringWithFormat:@"%@",@(self.currentIndex)];
+    if (offsetKey.length > 0) {
+        NSString *offsetValue = [self.offsetDict objectForKey:offsetKey];
+        if (offsetValue.length > 0) {
+            UIOffset offset = UIOffsetFromString(offsetValue);
+            tipX = tipX + offset.horizontal;
+            tipY = tipY + offset.vertical;
+        }
+    }
     return CGRectMake(tipX, tipY, tipW, tipH);
 }
 
 
 /**
  改变提示图片的位置
- 
+
  @param tipRect 提示图片位置
  @param guideRect 被提示的位置
  */
@@ -158,7 +168,7 @@ static GuideMask *instance;
     GuideMaskPosition currentP = [self.tipImageLocation[self.currentIndex] integerValue];
     switch (currentP) {
         case GuideMaskPositionUp:{
-            tipRect.origin.y = guideRect.origin.y - tipRect.size.height - GuideMaskMargin;
+            tipRect.origin.y = guideRect.origin.y - tipRect.size.height - kGuideMaskMargin;
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }
             break;
@@ -168,18 +178,18 @@ static GuideMask *instance;
             break;
         case GuideMaskPositionLeft:{
             tipRect.origin.y = guideRect.origin.y + (guideRect.size.height - tipRect.size.height) * 0.5;
-            tipRect.origin.x = guideRect.origin.x - tipRect.size.width - GuideMaskMargin;
+            tipRect.origin.x = guideRect.origin.x - tipRect.size.width - kGuideMaskMargin;
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }
             break;
         case GuideMaskPositionRight:{
             tipRect.origin.y = guideRect.origin.y + (guideRect.size.height - tipRect.size.height) * 0.5;
-            tipRect.origin.x = guideRect.origin.x +guideRect.size.width + GuideMaskMargin;
+            tipRect.origin.x = guideRect.origin.x +guideRect.size.width + kGuideMaskMargin;
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }
             break;
         case GuideMaskPositionLeftUp:{
-            tipRect.origin.y = guideRect.origin.y - tipRect.size.height - GuideMaskMargin;
+            tipRect.origin.y = guideRect.origin.y - tipRect.size.height - kGuideMaskMargin;
             tipRect.origin.x = guideRect.origin.x + guideRect.size.width * 0.5 - tipRect.size.width;
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }
@@ -190,7 +200,7 @@ static GuideMask *instance;
         }
             break;
         case GuideMaskPositionRightUp:{
-            tipRect.origin.y = guideRect.origin.y - tipRect.size.height - GuideMaskMargin;
+            tipRect.origin.y = guideRect.origin.y - tipRect.size.height - kGuideMaskMargin;
             tipRect.origin.x = guideRect.origin.x + guideRect.size.width * 0.5;
             self.tipImageView.frame = [self checkOverEdge:tipRect];
         }
@@ -227,6 +237,8 @@ static GuideMask *instance;
         //更换背景和提示图片
         [self changeTips];
     }else{
+        self.currentIndex = 0; //复位
+        self.rectRadius = kDefaultRectRadius;
         [self.bgView removeFromSuperview];
     }
 }
@@ -281,7 +293,8 @@ static GuideMask *instance;
         //坐标转换,以提示控件的坐标原点为原点，且和提示控件一样大小（bounds）的图案在window中的位置
         CGRect rect = [tempView convertRect:tempView.bounds toView:[UIApplication sharedApplication].delegate.window];
         //获取遮罩图形
-        UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:5];
+        CGFloat rectRadius = self.rectRadius ? self.rectRadius : kDefaultRectRadius;
+        UIImage *maskImg = [self imageWithTipRect:rect tipRectRadius:rectRadius];
         self.bgImageView.image = maskImg;
     }
 }
@@ -292,16 +305,24 @@ static GuideMask *instance;
         //如果设置了自定义位置，就按照设定的位置
         if (tipImageLocation.count > 0) {
             if(self.currentIndex >= tipImageLocation.count) return;
-            //重新生成背景
-            UIView *tempView = (UIView *)self.beGuidedViewsArray[self.currentIndex];
-            //坐标转换,以提示控件的坐标原点为原点，且和提示控件一样大小（bounds）的图案在window中的位置
-            CGRect rect = [tempView convertRect:tempView.bounds toView:[UIApplication sharedApplication].delegate.window];
-            //重新设置一下位置
-            [self changeTipImageViewLocation:self.tipImageView.frame guideRect:rect];
+            [self changeTips];//如果设置了位置，首次需要刷新一下位置
         }
     }
 }
 
+-(void)setOffsetDict:(NSDictionary<NSString *,NSString *> *)offsetDict{
+    _offsetDict = offsetDict;
+    if (offsetDict.count > 0) {
+        if ([offsetDict.allKeys containsObject:@"0"]) {
+            [self changeTips];//如果设置了偏移，第0个首次时需要刷新一下位置
+        }
+    }
+}
+
+-(void)setRectRadius:(CGFloat)rectRadius{
+    _rectRadius = rectRadius;
+    [self changeTips];
+}
 
 
 @end

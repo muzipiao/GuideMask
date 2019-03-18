@@ -1,0 +1,18 @@
+language: objective-c
+osx_image: xcode10
+
+before_install:
+  - env
+  - locale
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - xcpretty --version
+  - xcodebuild -version
+  - xcodebuild -showsdks
+
+script:
+  - set -o pipefail
+
+  - xcodebuild clean build -workspace Example/GuideMask.xcworkspace -scheme GuideMask_Example -sdk iphonesimulator -configuration Debug | xcpretty -c
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

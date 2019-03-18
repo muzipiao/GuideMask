@@ -1,6 +1,6 @@
 # GuideMask
 
-[![CI Status](https://img.shields.io/travis/lifei/GuideMask.svg?style=flat)](https://travis-ci.org/lifei/GuideMask)
+[![CI Status](https://img.shields.io/travis/muzipiao/GuideMask.svg?style=flat)](https://travis-ci.org/muzipiao/GuideMask)
 [![Version](https://img.shields.io/cocoapods/v/GuideMask.svg?style=flat)](https://cocoapods.org/pods/GuideMask)
 [![License](https://img.shields.io/cocoapods/l/GuideMask.svg?style=flat)](https://cocoapods.org/pods/GuideMask)
 [![Platform](https://img.shields.io/cocoapods/p/GuideMask.svg?style=flat)](https://cocoapods.org/pods/GuideMask)

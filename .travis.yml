@@ -13,6 +13,7 @@ script:
   - set -o pipefail
 
   - xcodebuild clean build -workspace Example/GuideMask.xcworkspace -scheme GuideMask -sdk iphonesimulator -configuration Debug | xcpretty -c
+  - xcodebuild clean build test -workspace Example/GuideMask.xcworkspace -scheme GuideMask_Tests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=latest" -configuration Debug GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES | xcpretty -c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

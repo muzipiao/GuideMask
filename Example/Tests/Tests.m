@@ -7,8 +7,11 @@
 //
 
 @import XCTest;
+#import "GuideMask.h"
 
 @interface Tests : XCTestCase
+
+@property (nonatomic, strong) GuideMask *guideMask;
 
 @end
 
@@ -17,18 +20,19 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.guideMask = [GuideMask shareGuide];
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.guideMask = nil;
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+-(void)testShareObj{
+    GuideMask *newObj = [GuideMask shareGuide];
+    XCTAssertNotNil(newObj, @"GuideMask 新实例创建成功");
+    XCTAssertEqual(newObj, self.guideMask,@"GuideMask 为单例");
 }
 
 @end

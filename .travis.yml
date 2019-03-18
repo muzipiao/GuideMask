@@ -12,7 +12,7 @@ before_install:
 script:
   - set -o pipefail
 
-  - xcodebuild clean build -workspace Example/GuideMask.xcworkspace -scheme GuideMask_Example -sdk iphonesimulator -configuration Debug | xcpretty -c
+  - xcodebuild clean build -workspace Example/GuideMask.xcworkspace -scheme GuideMask -sdk iphonesimulator -configuration Debug | xcpretty -c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

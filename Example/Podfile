@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'GuideMask_Example' do
+  pod 'GuideMask', :path => '../'
+
+  target 'GuideMask_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,16 @@
+PODS:
+  - GuideMask (1.0.4)
+
+DEPENDENCIES:
+  - GuideMask (from `../`)
+
+EXTERNAL SOURCES:
+  GuideMask:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GuideMask: 5a4cf8c2e1d65cd396f3b91a72431d4ab91351d9
+
+PODFILE CHECKSUM: 18a8c8808df651f9f14d5e1e067d84f48f39a880
+
+COCOAPODS: 1.6.1

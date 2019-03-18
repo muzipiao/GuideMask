@@ -1,0 +1,6 @@
+framework module GuideMask {
+  umbrella header "GuideMask-umbrella.h"
+
+  export *
+  module * { export * }
+}

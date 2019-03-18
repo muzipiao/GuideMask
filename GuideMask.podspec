@@ -1,16 +1,42 @@
+#
+# Be sure to run `pod lib lint GuideMask.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
 
 Pod::Spec.new do |s|
+  s.name             = 'GuideMask'
+  s.version          = '1.0.4'
+  s.summary          = 'iOS 快速添加新功能提示。'
 
-  s.name         = "GuideMask"
-  s.version      = "1.0.3"
-  s.summary      = "快速添加新功能提示，只需传入相应待提示的View和新功能小图片名称即可"
-  s.homepage     = "https://github.com/muzipiao/GuideMask"
-  s.license      = "MIT"
-  s.author       = { "lifei" => "lifei_zdjl@126.com" }
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/muzipiao/GuideMask.git", :tag => s.version}
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.source_files = "GuideMask/**/*.{h,m}"
-  s.requires_arc = true
+  s.description      = <<-DESC
+  iOS 快速添加新功能提示，只需传入相应待提示的 View 和新功能小图片名称即可。
+                       DESC
 
+  s.homepage         = 'https://github.com/muzipiao/GuideMask'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'lifei' => 'lifei_zdjl@126.com' }
+  s.source           = { :git => 'https://github.com/muzipiao/GuideMask.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '7.0'
+
+  s.source_files = 'GuideMask/Classes/**/*'
+  
+  # s.resource_bundles = {
+  #   'GuideMask' => ['GuideMask/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end

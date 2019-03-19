@@ -1,5 +1,5 @@
 PODS:
-  - GuideMask (1.0.4)
+  - GuideMask (1.0.5)
 
 DEPENDENCIES:
   - GuideMask (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GuideMask: 5a4cf8c2e1d65cd396f3b91a72431d4ab91351d9
+  GuideMask: 5d45577edd0bfb295e375236b9c71caf6b0fef1d
 
 PODFILE CHECKSUM: 18a8c8808df651f9f14d5e1e067d84f48f39a880
 

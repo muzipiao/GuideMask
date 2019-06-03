@@ -1,6 +1,7 @@
 # GuideMask
 
 [![CI Status](https://img.shields.io/travis/muzipiao/GuideMask.svg?style=flat)](https://travis-ci.org/muzipiao/GuideMask)
+[![codecov](https://codecov.io/gh/muzipiao/GuideMask/branch/master/graph/badge.svg)](https://codecov.io/gh/muzipiao/GuideMask)
 [![Version](https://img.shields.io/cocoapods/v/GuideMask.svg?style=flat)](https://cocoapods.org/pods/GuideMask)
 [![License](https://img.shields.io/cocoapods/l/GuideMask.svg?style=flat)](https://cocoapods.org/pods/GuideMask)
 [![Platform](https://img.shields.io/cocoapods/p/GuideMask.svg?style=flat)](https://cocoapods.org/pods/GuideMask)
@@ -30,13 +31,13 @@
 
 开发默认包含以上这两个类库
 
-`GuideMask ` Demo 编译环境为 Xcode 10.1
+`GuideMask ` Demo 编译环境为 Xcode 10.2.1
 
 ## 添加 GuideMask 至你的项目
 
 ### CocoaPods
 
-[CocoaPods](http://cocoapods.org) 是集成`GuideMask `最简单的方式。
+[CocoaPods](http://cocoapods.org) 是集成 `GuideMask `最简单的方式。
 
 1. 编辑 Podfile 文件，增加行 `pod 'GuideMask'`。
 2. 未安装 CocoaPods，命令行输入 `pod install`安装。
@@ -79,7 +80,7 @@ mask.bgColor = [UIColor colorWithRed:128.0/255.0 green:128.0/255.0 blue:128.0/25
 
 ## 许可
 
-OOB在MIT许可下可用。有关详细信息，请参阅LICENSE文件。
+OOB 在 MIT 许可下可用。有关详细信息，请参阅 LICENSE 文件。
 
 
-如果您觉得有所帮助，请在[GitHub GuideMaskDemo](https://github.com/muzipiao/GuideMask)上赏个Star ⭐️，您的鼓励是我前进的动力
+如果您觉得有所帮助，请在 [GitHub GuideMaskDemo](https://github.com/muzipiao/GuideMask) 上赏个Star ⭐️，您的鼓励是我前进的动力

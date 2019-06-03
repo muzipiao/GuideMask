@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FC7444ABE1E9E7D457549DBF3895ABD /* GuideMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BF0B4A2B46504E70B6D77EE4A6DD45 /* GuideMask.m */; };
-		2D8A87AA673B8FD3194D320E606FDE5D /* Pods-GuideMask_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1409EE6676074FE7105A1BD0AB9EDBF /* Pods-GuideMask_Example-dummy.m */; };
-		43310D5A3ED918C966E0CE05409BA040 /* Pods-GuideMask_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E10C9A49099AA56675B84DB80061A657 /* Pods-GuideMask_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		183F3F4E9B56F0286E727E1E90A09CF6 /* GuideMask.h in Headers */ = {isa = PBXBuildFile; fileRef = F910023CBCFB7D5DDB813E63162A5878 /* GuideMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D8A87AA673B8FD3194D320E606FDE5D /* Pods-GuideMask_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5454A24157FF707AA2A712799514D40B /* Pods-GuideMask_Example-dummy.m */; };
+		43310D5A3ED918C966E0CE05409BA040 /* Pods-GuideMask_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AEF8784260D0BD63E21C7B1109F6365 /* Pods-GuideMask_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CB1DAF07E03520FB071FF0E0090E584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		7FA8DBFFD21A7CE6E5C5DED63089C24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		A47589382E2FCC92B9A3AF25B1FDFF61 /* GuideMask.h in Headers */ = {isa = PBXBuildFile; fileRef = F910023CBCFB7D5DDB813E63162A5878 /* GuideMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE944AD4AD4355C028CEBDF33C608C7B /* Pods-GuideMask_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2184B96AFF321E771DFB9C964B7E43 /* Pods-GuideMask_Tests-dummy.m */; };
-		BBAB3CCD3E6237B1582FD65D749A7B4C /* GuideMask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B51405603A414C368AD8933005EF38A0 /* GuideMask-dummy.m */; };
-		DBE653C958B305604EC04056304AC829 /* Pods-GuideMask_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2903E5DFB462DEE88262266A778FA6 /* Pods-GuideMask_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89AF69C370703C7C1C91F01BCE8CF91C /* GuideMask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D68D2DEAB133FEB82CDAD2F907D32B /* GuideMask-dummy.m */; };
+		A483BD0B05C78DB4EC56D51453E46942 /* GuideMask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 635B3ADA5B95A3075F00F684761D8C2F /* GuideMask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE944AD4AD4355C028CEBDF33C608C7B /* Pods-GuideMask_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 968C780A2CBB43AD469FB09BFA2D1D81 /* Pods-GuideMask_Tests-dummy.m */; };
+		DADD9A7C1F74245128F2E3DAFD9C32A9 /* GuideMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 62BF0B4A2B46504E70B6D77EE4A6DD45 /* GuideMask.m */; };
+		DBE653C958B305604EC04056304AC829 /* Pods-GuideMask_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3608F5F6824CF2474DCA41FCC2EC4E49 /* Pods-GuideMask_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4235656EA09D9BA6A34BE55A366DC44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		FB8A0A1439A8E19CBE00E2A119237FF3 /* GuideMask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50750D33183933B5308E64F4659648B3 /* GuideMask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,52 +25,52 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D423A41DE4240F4D36F0ED73E4D80F9;
+			remoteGlobalIDString = E78B0E2323E9DF9900C8B1A2FAE1065B;
 			remoteInfo = "Pods-GuideMask_Example";
 		};
 		AB04017AF743E8356DF256DE2F177D43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F3BBF0E2FA7201119BEB13C8313D5C1A;
+			remoteGlobalIDString = 3A4A120DCFDFD1A3E0A85CE7B9DAB730;
 			remoteInfo = GuideMask;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05E05A72531F00FCF4B9CCB271E15AF3 /* Pods_GuideMask_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuideMask_Tests.framework; path = "Pods-GuideMask_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1653930A10C41543611095571B8D83C4 /* GuideMask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GuideMask-Info.plist"; sourceTree = "<group>"; };
-		1A1AF2B70002A9A3A6BC7974C618B27C /* Pods-GuideMask_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		323230B6EF493C5A27E7AD342EFADFCF /* GuideMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuideMask.xcconfig; sourceTree = "<group>"; };
-		3C01159615868767E8DB77B93AC340D4 /* GuideMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GuideMask.framework; path = GuideMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D2184B96AFF321E771DFB9C964B7E43 /* Pods-GuideMask_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuideMask_Tests-dummy.m"; sourceTree = "<group>"; };
-		478DB719D0538F841D556FAFB21CF9EF /* GuideMask.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GuideMask.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4F2903E5DFB462DEE88262266A778FA6 /* Pods-GuideMask_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuideMask_Example-umbrella.h"; sourceTree = "<group>"; };
-		50750D33183933B5308E64F4659648B3 /* GuideMask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuideMask-umbrella.h"; sourceTree = "<group>"; };
-		51B20FEF10D74F56F2B9D2DF602F5094 /* Pods-GuideMask_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5FE241DDD7AB55BAC041EEE2DBDBE60B /* Pods-GuideMask_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuideMask_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01B10E8A3A5923EF03C937FCDA12A4AD /* GuideMask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GuideMask-Info.plist"; sourceTree = "<group>"; };
+		0E13ABAC951519778F538E0D88E6BD28 /* Pods-GuideMask_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Example-Info.plist"; sourceTree = "<group>"; };
+		17D68D2DEAB133FEB82CDAD2F907D32B /* GuideMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GuideMask-dummy.m"; sourceTree = "<group>"; };
+		18EF60C6F36091F3981EEA3383F52BC0 /* GuideMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GuideMask.xcconfig; sourceTree = "<group>"; };
+		1EB3121BDEFA8F345CC2A7425E775044 /* Pods-GuideMask_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3608F5F6824CF2474DCA41FCC2EC4E49 /* Pods-GuideMask_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuideMask_Example-umbrella.h"; sourceTree = "<group>"; };
+		3AEF8784260D0BD63E21C7B1109F6365 /* Pods-GuideMask_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuideMask_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3EA84E297C897BED9CA5FDA85D7E7FF8 /* Pods-GuideMask_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		478DB719D0538F841D556FAFB21CF9EF /* GuideMask.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GuideMask.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4D4F8ABB9CF0A04E35E7144F60CCC72F /* Pods_GuideMask_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuideMask_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5454A24157FF707AA2A712799514D40B /* Pods-GuideMask_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuideMask_Example-dummy.m"; sourceTree = "<group>"; };
+		5A6256AE4555BDDD3C84319839EFFA6B /* GuideMask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuideMask-prefix.pch"; sourceTree = "<group>"; };
+		61AD981E48485D748A7D67DF1B720FA2 /* Pods-GuideMask_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		62BF0B4A2B46504E70B6D77EE4A6DD45 /* GuideMask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GuideMask.m; path = GuideMask/Classes/GuideMask.m; sourceTree = "<group>"; };
-		760F78C9DEDC1C621E9DEA6202D24217 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		78EC7F89C411334E7ADD99236B1899FB /* Pods-GuideMask_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Tests-Info.plist"; sourceTree = "<group>"; };
-		884ACD8DDD9E1D7C0CBC7479EA3454BA /* Pods-GuideMask_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuideMask_Example.modulemap"; sourceTree = "<group>"; };
-		8DA1241ED1931DDEFA2DDA04657A7DA2 /* Pods_GuideMask_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GuideMask_Example.framework; path = "Pods-GuideMask_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E4C07D271CD745EE54F75354021D504 /* GuideMask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuideMask-prefix.pch"; sourceTree = "<group>"; };
-		9060A9D14DFE529BCFF710D2820F652E /* GuideMask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GuideMask.modulemap; sourceTree = "<group>"; };
-		90786E4D15AC2DADDDD418C9D96A28F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		91938E4DFF3B1BF08135BCAF0114F012 /* Pods-GuideMask_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Example.release.xcconfig"; sourceTree = "<group>"; };
-		91D40E41D70EE312603DE54F4D4C7D60 /* Pods-GuideMask_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		936FFC190B6061534270CE77536AA51E /* Pods-GuideMask_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuideMask_Tests.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AD0F55AB9112993A3A1D2910B3CB77CD /* Pods-GuideMask_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B0FF73CCB5D1B0D2B5FC197195330415 /* Pods-GuideMask_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuideMask_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B1409EE6676074FE7105A1BD0AB9EDBF /* Pods-GuideMask_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuideMask_Example-dummy.m"; sourceTree = "<group>"; };
-		B51405603A414C368AD8933005EF38A0 /* GuideMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GuideMask-dummy.m"; sourceTree = "<group>"; };
-		BB16C87CFCD5E3C728606596354AAA13 /* Pods-GuideMask_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuideMask_Example-frameworks.sh"; sourceTree = "<group>"; };
+		635B3ADA5B95A3075F00F684761D8C2F /* GuideMask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GuideMask-umbrella.h"; sourceTree = "<group>"; };
+		672F87F71F35078A0321364988CFF62A /* Pods-GuideMask_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		717F211AE6BC8A1D9CA2FE358A48AF4F /* Pods-GuideMask_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuideMask_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		725FEE0C85AA651ABDF049C9B0CF0CE5 /* Pods-GuideMask_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuideMask_Tests.modulemap"; sourceTree = "<group>"; };
+		760F78C9DEDC1C621E9DEA6202D24217 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		90786E4D15AC2DADDDD418C9D96A28F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		968C780A2CBB43AD469FB09BFA2D1D81 /* Pods-GuideMask_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GuideMask_Tests-dummy.m"; sourceTree = "<group>"; };
+		9B8B1BAD25285DC23B0EF1B235247D1D /* GuideMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GuideMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A19B92FD8C07D0A89CE9C7D3022F0563 /* Pods-GuideMask_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GuideMask_Example.modulemap"; sourceTree = "<group>"; };
+		B916BD81B91EB55ABF4DEDBD93A2EB17 /* Pods-GuideMask_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BFF239737CACB305DF9492F65A38B7FB /* Pods_GuideMask_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuideMask_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E10C9A49099AA56675B84DB80061A657 /* Pods-GuideMask_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GuideMask_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F223BDB9E1F0190A7114E29395713EF5 /* Pods-GuideMask_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DB0802CABBC2055CAA01C343B2A7F89C /* Pods-GuideMask_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GuideMask_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E0CE69AEF83C1B800E9FFA6A4EC48CD8 /* Pods-GuideMask_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GuideMask_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E83B2E64DDCAE89BC7E45CFE95D5E8A8 /* Pods-GuideMask_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GuideMask_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EF81B09B67B5E27173C012F3F2F98364 /* Pods-GuideMask_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Tests-Info.plist"; sourceTree = "<group>"; };
 		F910023CBCFB7D5DDB813E63162A5878 /* GuideMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GuideMask.h; path = GuideMask/Classes/GuideMask.h; sourceTree = "<group>"; };
-		FFFC3A00A5009CD51C46773EA41FA6B1 /* Pods-GuideMask_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GuideMask_Example-Info.plist"; sourceTree = "<group>"; };
+		FB9883E09833F9A6F4D0C38C302DBE5C /* GuideMask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GuideMask.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +104,9 @@
 		128DBAB4FFC5260FB49B0C2601641E22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C01159615868767E8DB77B93AC340D4 /* GuideMask.framework */,
-				8DA1241ED1931DDEFA2DDA04657A7DA2 /* Pods_GuideMask_Example.framework */,
-				05E05A72531F00FCF4B9CCB271E15AF3 /* Pods_GuideMask_Tests.framework */,
+				9B8B1BAD25285DC23B0EF1B235247D1D /* GuideMask.framework */,
+				4D4F8ABB9CF0A04E35E7144F60CCC72F /* Pods_GuideMask_Example.framework */,
+				BFF239737CACB305DF9492F65A38B7FB /* Pods_GuideMask_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,49 +117,36 @@
 				F910023CBCFB7D5DDB813E63162A5878 /* GuideMask.h */,
 				62BF0B4A2B46504E70B6D77EE4A6DD45 /* GuideMask.m */,
 				CFE658A2EFE3F22D75D3549571B38D0B /* Pod */,
-				7C79B621DA0CEE4D0AC09B472A60DF40 /* Support Files */,
+				A457F59444D716EA30B2B8471A1A6379 /* Support Files */,
 			);
 			name = GuideMask;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		5E69919FFBFA99A651DF617537819C40 /* Pods-GuideMask_Tests */ = {
+		40E27B872F75C19A7C1D2A85254F9851 /* Pods-GuideMask_Example */ = {
 			isa = PBXGroup;
 			children = (
-				936FFC190B6061534270CE77536AA51E /* Pods-GuideMask_Tests.modulemap */,
-				B0FF73CCB5D1B0D2B5FC197195330415 /* Pods-GuideMask_Tests-acknowledgements.markdown */,
-				91D40E41D70EE312603DE54F4D4C7D60 /* Pods-GuideMask_Tests-acknowledgements.plist */,
-				3D2184B96AFF321E771DFB9C964B7E43 /* Pods-GuideMask_Tests-dummy.m */,
-				78EC7F89C411334E7ADD99236B1899FB /* Pods-GuideMask_Tests-Info.plist */,
-				E10C9A49099AA56675B84DB80061A657 /* Pods-GuideMask_Tests-umbrella.h */,
-				1A1AF2B70002A9A3A6BC7974C618B27C /* Pods-GuideMask_Tests.debug.xcconfig */,
-				AD0F55AB9112993A3A1D2910B3CB77CD /* Pods-GuideMask_Tests.release.xcconfig */,
+				A19B92FD8C07D0A89CE9C7D3022F0563 /* Pods-GuideMask_Example.modulemap */,
+				E0CE69AEF83C1B800E9FFA6A4EC48CD8 /* Pods-GuideMask_Example-acknowledgements.markdown */,
+				672F87F71F35078A0321364988CFF62A /* Pods-GuideMask_Example-acknowledgements.plist */,
+				5454A24157FF707AA2A712799514D40B /* Pods-GuideMask_Example-dummy.m */,
+				E83B2E64DDCAE89BC7E45CFE95D5E8A8 /* Pods-GuideMask_Example-frameworks.sh */,
+				0E13ABAC951519778F538E0D88E6BD28 /* Pods-GuideMask_Example-Info.plist */,
+				3608F5F6824CF2474DCA41FCC2EC4E49 /* Pods-GuideMask_Example-umbrella.h */,
+				1EB3121BDEFA8F345CC2A7425E775044 /* Pods-GuideMask_Example.debug.xcconfig */,
+				DB0802CABBC2055CAA01C343B2A7F89C /* Pods-GuideMask_Example.release.xcconfig */,
 			);
-			name = "Pods-GuideMask_Tests";
-			path = "Target Support Files/Pods-GuideMask_Tests";
+			name = "Pods-GuideMask_Example";
+			path = "Target Support Files/Pods-GuideMask_Example";
 			sourceTree = "<group>";
 		};
 		71EE70602C771DEB4655C295F5D2B98B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CCF698B87B8A082A60E23C6557E68133 /* Pods-GuideMask_Example */,
-				5E69919FFBFA99A651DF617537819C40 /* Pods-GuideMask_Tests */,
+				40E27B872F75C19A7C1D2A85254F9851 /* Pods-GuideMask_Example */,
+				FB9ABC25D504584019675E691AA593D7 /* Pods-GuideMask_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7C79B621DA0CEE4D0AC09B472A60DF40 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9060A9D14DFE529BCFF710D2820F652E /* GuideMask.modulemap */,
-				323230B6EF493C5A27E7AD342EFADFCF /* GuideMask.xcconfig */,
-				B51405603A414C368AD8933005EF38A0 /* GuideMask-dummy.m */,
-				1653930A10C41543611095571B8D83C4 /* GuideMask-Info.plist */,
-				8E4C07D271CD745EE54F75354021D504 /* GuideMask-prefix.pch */,
-				50750D33183933B5308E64F4659648B3 /* GuideMask-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GuideMask";
 			sourceTree = "<group>";
 		};
 		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
@@ -170,21 +157,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		CCF698B87B8A082A60E23C6557E68133 /* Pods-GuideMask_Example */ = {
+		A457F59444D716EA30B2B8471A1A6379 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				884ACD8DDD9E1D7C0CBC7479EA3454BA /* Pods-GuideMask_Example.modulemap */,
-				5FE241DDD7AB55BAC041EEE2DBDBE60B /* Pods-GuideMask_Example-acknowledgements.markdown */,
-				51B20FEF10D74F56F2B9D2DF602F5094 /* Pods-GuideMask_Example-acknowledgements.plist */,
-				B1409EE6676074FE7105A1BD0AB9EDBF /* Pods-GuideMask_Example-dummy.m */,
-				BB16C87CFCD5E3C728606596354AAA13 /* Pods-GuideMask_Example-frameworks.sh */,
-				FFFC3A00A5009CD51C46773EA41FA6B1 /* Pods-GuideMask_Example-Info.plist */,
-				4F2903E5DFB462DEE88262266A778FA6 /* Pods-GuideMask_Example-umbrella.h */,
-				F223BDB9E1F0190A7114E29395713EF5 /* Pods-GuideMask_Example.debug.xcconfig */,
-				91938E4DFF3B1BF08135BCAF0114F012 /* Pods-GuideMask_Example.release.xcconfig */,
+				FB9883E09833F9A6F4D0C38C302DBE5C /* GuideMask.modulemap */,
+				18EF60C6F36091F3981EEA3383F52BC0 /* GuideMask.xcconfig */,
+				17D68D2DEAB133FEB82CDAD2F907D32B /* GuideMask-dummy.m */,
+				01B10E8A3A5923EF03C937FCDA12A4AD /* GuideMask-Info.plist */,
+				5A6256AE4555BDDD3C84319839EFFA6B /* GuideMask-prefix.pch */,
+				635B3ADA5B95A3075F00F684761D8C2F /* GuideMask-umbrella.h */,
 			);
-			name = "Pods-GuideMask_Example";
-			path = "Target Support Files/Pods-GuideMask_Example";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GuideMask";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -216,6 +200,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB9ABC25D504584019675E691AA593D7 /* Pods-GuideMask_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				725FEE0C85AA651ABDF049C9B0CF0CE5 /* Pods-GuideMask_Tests.modulemap */,
+				717F211AE6BC8A1D9CA2FE358A48AF4F /* Pods-GuideMask_Tests-acknowledgements.markdown */,
+				3EA84E297C897BED9CA5FDA85D7E7FF8 /* Pods-GuideMask_Tests-acknowledgements.plist */,
+				968C780A2CBB43AD469FB09BFA2D1D81 /* Pods-GuideMask_Tests-dummy.m */,
+				EF81B09B67B5E27173C012F3F2F98364 /* Pods-GuideMask_Tests-Info.plist */,
+				3AEF8784260D0BD63E21C7B1109F6365 /* Pods-GuideMask_Tests-umbrella.h */,
+				61AD981E48485D748A7D67DF1B720FA2 /* Pods-GuideMask_Tests.debug.xcconfig */,
+				B916BD81B91EB55ABF4DEDBD93A2EB17 /* Pods-GuideMask_Tests.release.xcconfig */,
+			);
+			name = "Pods-GuideMask_Tests";
+			path = "Target Support Files/Pods-GuideMask_Tests";
+			sourceTree = "<group>";
+		};
 		FC41EAEE3181B4C09946AD8EE8AFC516 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,15 +227,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		015775200B03DCC9EF97711C0EF0E17B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB8A0A1439A8E19CBE00E2A119237FF3 /* GuideMask-umbrella.h in Headers */,
-				A47589382E2FCC92B9A3AF25B1FDFF61 /* GuideMask.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3664B9DDBAA3DE59BDEFC4C148AC6664 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,29 +243,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3C5319B5FFAB56E741754C1191F75C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A483BD0B05C78DB4EC56D51453E46942 /* GuideMask-umbrella.h in Headers */,
+				183F3F4E9B56F0286E727E1E90A09CF6 /* GuideMask.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5D423A41DE4240F4D36F0ED73E4D80F9 /* Pods-GuideMask_Example */ = {
+		3A4A120DCFDFD1A3E0A85CE7B9DAB730 /* GuideMask */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E940B41371CAE3828B91FBF4750CF586 /* Build configuration list for PBXNativeTarget "Pods-GuideMask_Example" */;
+			buildConfigurationList = A0B9FB941621842C8952D4FD205EDB62 /* Build configuration list for PBXNativeTarget "GuideMask" */;
 			buildPhases = (
-				3664B9DDBAA3DE59BDEFC4C148AC6664 /* Headers */,
-				88A2DB987F638F50D77644B0296F5AFE /* Sources */,
-				7EB02EFD38563A6A490093D0D6E8970D /* Frameworks */,
-				46BE8880C68C98B472A035367A422B7D /* Resources */,
+				A3C5319B5FFAB56E741754C1191F75C0 /* Headers */,
+				F8FFBDA4CBF3097A19301C5284921E1D /* Sources */,
+				915EC9B6A4A498AE894D7219C0CFB9EB /* Frameworks */,
+				600AD41933C7F47C353C4B4CD141E875 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC9F6C2537878CCC42C14046D97D40D6 /* PBXTargetDependency */,
 			);
-			name = "Pods-GuideMask_Example";
-			productName = "Pods-GuideMask_Example";
-			productReference = 8DA1241ED1931DDEFA2DDA04657A7DA2 /* Pods_GuideMask_Example.framework */;
+			name = GuideMask;
+			productName = GuideMask;
+			productReference = 9B8B1BAD25285DC23B0EF1B235247D1D /* GuideMask.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6C33222A9D4D83D08AD2630E09B37534 /* Pods-GuideMask_Tests */ = {
+		5D430DCB7916772B59A6761657F48464 /* Pods-GuideMask_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6C94E7710F1DD45470F798DC62FFFC4 /* Build configuration list for PBXNativeTarget "Pods-GuideMask_Tests" */;
 			buildPhases = (
@@ -290,25 +289,26 @@
 			);
 			name = "Pods-GuideMask_Tests";
 			productName = "Pods-GuideMask_Tests";
-			productReference = 05E05A72531F00FCF4B9CCB271E15AF3 /* Pods_GuideMask_Tests.framework */;
+			productReference = BFF239737CACB305DF9492F65A38B7FB /* Pods_GuideMask_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F3BBF0E2FA7201119BEB13C8313D5C1A /* GuideMask */ = {
+		E78B0E2323E9DF9900C8B1A2FAE1065B /* Pods-GuideMask_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0B9FB941621842C8952D4FD205EDB62 /* Build configuration list for PBXNativeTarget "GuideMask" */;
+			buildConfigurationList = E940B41371CAE3828B91FBF4750CF586 /* Build configuration list for PBXNativeTarget "Pods-GuideMask_Example" */;
 			buildPhases = (
-				015775200B03DCC9EF97711C0EF0E17B /* Headers */,
-				2026CFCD47078688DF20C0869671190B /* Sources */,
-				915EC9B6A4A498AE894D7219C0CFB9EB /* Frameworks */,
-				600AD41933C7F47C353C4B4CD141E875 /* Resources */,
+				3664B9DDBAA3DE59BDEFC4C148AC6664 /* Headers */,
+				88A2DB987F638F50D77644B0296F5AFE /* Sources */,
+				7EB02EFD38563A6A490093D0D6E8970D /* Frameworks */,
+				46BE8880C68C98B472A035367A422B7D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC9F6C2537878CCC42C14046D97D40D6 /* PBXTargetDependency */,
 			);
-			name = GuideMask;
-			productName = GuideMask;
-			productReference = 3C01159615868767E8DB77B93AC340D4 /* GuideMask.framework */;
+			name = "Pods-GuideMask_Example";
+			productName = "Pods-GuideMask_Example";
+			productReference = 4D4F8ABB9CF0A04E35E7144F60CCC72F /* Pods_GuideMask_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -318,23 +318,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 128DBAB4FFC5260FB49B0C2601641E22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3BBF0E2FA7201119BEB13C8313D5C1A /* GuideMask */,
-				5D423A41DE4240F4D36F0ED73E4D80F9 /* Pods-GuideMask_Example */,
-				6C33222A9D4D83D08AD2630E09B37534 /* Pods-GuideMask_Tests */,
+				3A4A120DCFDFD1A3E0A85CE7B9DAB730 /* GuideMask */,
+				E78B0E2323E9DF9900C8B1A2FAE1065B /* Pods-GuideMask_Example */,
+				5D430DCB7916772B59A6761657F48464 /* Pods-GuideMask_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,15 +365,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2026CFCD47078688DF20C0869671190B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BBAB3CCD3E6237B1582FD65D749A7B4C /* GuideMask-dummy.m in Sources */,
-				1FC7444ABE1E9E7D457549DBF3895ABD /* GuideMask.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		401C7C0F58821B3A64C44C04B2B9FA05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,19 +381,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8FFBDA4CBF3097A19301C5284921E1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AF69C370703C7C1C91F01BCE8CF91C /* GuideMask-dummy.m in Sources */,
+				DADD9A7C1F74245128F2E3DAFD9C32A9 /* GuideMask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		74A5AE8BBE89AAA5C08E50A4CD4AB1CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GuideMask_Example";
-			target = 5D423A41DE4240F4D36F0ED73E4D80F9 /* Pods-GuideMask_Example */;
+			target = E78B0E2323E9DF9900C8B1A2FAE1065B /* Pods-GuideMask_Example */;
 			targetProxy = 2EB3E5EEA7CC57150FA58349DF9A3430 /* PBXContainerItemProxy */;
 		};
 		EC9F6C2537878CCC42C14046D97D40D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GuideMask;
-			target = F3BBF0E2FA7201119BEB13C8313D5C1A /* GuideMask */;
+			target = 3A4A120DCFDFD1A3E0A85CE7B9DAB730 /* GuideMask */;
 			targetProxy = AB04017AF743E8356DF256DE2F177D43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -411,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -460,8 +462,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -471,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -533,7 +535,7 @@
 		};
 		557AD788ED4A8D6ADB43C339C40CB9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 323230B6EF493C5A27E7AD342EFADFCF /* GuideMask.xcconfig */;
+			baseConfigurationReference = 18EF60C6F36091F3981EEA3383F52BC0 /* GuideMask.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -563,7 +565,7 @@
 		};
 		72F09CAEAA263E7B624EE49F321CCB0A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD0F55AB9112993A3A1D2910B3CB77CD /* Pods-GuideMask_Tests.release.xcconfig */;
+			baseConfigurationReference = B916BD81B91EB55ABF4DEDBD93A2EB17 /* Pods-GuideMask_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -597,7 +599,7 @@
 		};
 		95F9E6576388E4A7BA1B00EBF9B6ED11 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F223BDB9E1F0190A7114E29395713EF5 /* Pods-GuideMask_Example.debug.xcconfig */;
+			baseConfigurationReference = 1EB3121BDEFA8F345CC2A7425E775044 /* Pods-GuideMask_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -630,7 +632,7 @@
 		};
 		BC2C0736FC823770FD224BAEF1BBA7C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91938E4DFF3B1BF08135BCAF0114F012 /* Pods-GuideMask_Example.release.xcconfig */;
+			baseConfigurationReference = DB0802CABBC2055CAA01C343B2A7F89C /* Pods-GuideMask_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -664,7 +666,7 @@
 		};
 		BCBFEE9C58352AF90F7C92DFC77245DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A1AF2B70002A9A3A6BC7974C618B27C /* Pods-GuideMask_Tests.debug.xcconfig */;
+			baseConfigurationReference = 61AD981E48485D748A7D67DF1B720FA2 /* Pods-GuideMask_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -697,7 +699,7 @@
 		};
 		C77DDB0D7182A479D1E180C0E2FF088D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 323230B6EF493C5A27E7AD342EFADFCF /* GuideMask.xcconfig */;
+			baseConfigurationReference = 18EF60C6F36091F3981EEA3383F52BC0 /* GuideMask.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
